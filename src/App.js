@@ -16,8 +16,7 @@ console.log(cardImages)
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-  const [title, setTitle] = useState('Magic Match')
-
+ 
   const [cards, setCards] = useState([])
   const [turns, setTurns] = useState(0)
 
@@ -76,7 +75,7 @@ function App() {
 
   //end game
   const end = () => {
-    if (cards.filter((card) => card.matched == false).length == 2) {
+    if (cards.filter((card) => card.matched === false).length === 2) {
       // setTitle('THE END')
       // alert('End of the game')
       setShowModal(true)
@@ -106,7 +105,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{title}</h1>
+      <h1>Magic Match</h1>
       <button onClick={shuffleCards}>New Game</button>
 
       <div className="card-grid">

@@ -2,19 +2,20 @@
   max-width: 860px;
   margin: 40px auto;
 }
-button {
+button  {
   background: none;
   border: 2px solid #fff;
   padding: 6px 12px;
   border-radius: 4px;
-  color: #fff;
+  color: rgb(227, 228, 227);
+  /* kk */
   font-weight: bold;
   cursor: pointer;
   font-size: 1em;
 }
 button:hover {
   background: rgb(153, 199, 84);;
-  color: #fff;
+  color: rgb(26, 136, 46);
 }
 .card-grid {
   margin-top: 40px;

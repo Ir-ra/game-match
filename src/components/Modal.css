@@ -9,9 +9,16 @@
   .modal {
     padding: 30px;
     max-width: 480px;
-    margin: 150px auto;
+    margin: 200px auto;
     background: rgb(243, 237, 237);
     border-radius: 10px;
+  }
+  @media (max-width:400px){
+    .modal{
+      max-width: 150px;
+      margin: 100px;
+      justify-content: cente;
+    }
   }
 
   .modal h2 {

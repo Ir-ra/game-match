@@ -68,27 +68,19 @@ function App() {
         setTimeout(() => resetTurn(), 1000)
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [choiceOne, choiceTwo])
-
-
-  //end game
-  const end = () => {
-    if (cards.filter((card) => card.matched === false).length === 2) {
-      // setTitle('THE END')
-      // alert('End of the game')
-      setShowModal(true)
-    }
-  }
-
 
 
   //reset choices & increase turns
   const resetTurn = () => {
     setChoiceOne(null)
     setChoiceTwo(null)
-    end()
     setTurns(prevTurns => prevTurns + 1)
     setDisabled(false)
+    if(cards.filter((card) => card.matched === false).length === 2){
+      setShowModal(true)
+    }
   }
 
   //start new game automatically
